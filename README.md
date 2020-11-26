@@ -4,6 +4,12 @@ Sometimes you want some basics to play around with or use for a demo. I’ve got
 
 It’s designed to work with the [Modern CSS Reset](https://github.com/hankchizljaw/some-nice-basic-css).
 
+## Demo
+
+Head over to <https://some-nice-basic-css.netlify.app> to check out how it all looks.
+
+Here’s a nicely framed screenshot too: ![The site in all of it’s glory in a Google Chrome browser window, which has a lush pink-toned image of Tokyo](https://assets.codepen.io/174183/some-nice-basic-css.jpg?width=1658&height=1026&format=auto)
+
 ## Getting started
 
 You can go ahead and copy the CSS if you want. It all lives in `global.css`. You can also use it from a CDN like this:
