@@ -1,0 +1,10 @@
+*.log
+npm-debug.*
+*.scssc
+*.log
+*.swp
+.DS_Store
+.sass-cache
+.env
+node_modules
+dist 

@@ -1,0 +1,127 @@
+/* Globals */
+body {
+  background: #f3f3f3;
+  color: #252525;
+  padding: 3rem 0;
+  line-height: 1.5;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  max-width: 35ch;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* More info: https://piccalil.li/quick-tip/limit-line-lengths-to-increase-readability/ */
+p,
+li,
+dl {
+  max-width: 70ch;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: minmax(auto, 20ch) 1fr;
+  grid-gap: 0.5rem 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+li + li {
+  margin-top: 0.7rem;
+}
+
+blockquote {
+  border-left: 0.25rem solid;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  max-width: 55ch;
+  padding-left: 1.25rem;
+}
+
+code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+pre {
+  padding: 1.25rem;
+  background: #e4e6ec;
+  white-space: nowrap;
+  max-width: 90ch;
+}
+
+pre code {
+  display: block;
+  width: 100%;
+  word-spacing: normal;
+  word-break: normal;
+  tab-size: 2;
+  hyphens: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Links and focus states */
+a {
+  color: currentColor;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus {
+  outline: 1px dashed currentColor;
+  outline-offset: 0.15rem;
+}
+
+/* Handy utils */
+.wrapper {
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* More info: https://piccalil.li/quick-tip/flow-css-utility/ */
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* A handy composition block for managing content flow. More on this sorta thing: https://cube.fyi */
+.post {
+  font-size: 1.125rem;
+  --flow-space: 1.8rem;
+}
+
+.post h2,
+.post h3,
+.post footer {
+  --flow-space: 3rem;
+}
+
+.post h1 + *,
+.post h2 + *,
+.post h3 + * {
+  --flow-space: 1rem;
+}
